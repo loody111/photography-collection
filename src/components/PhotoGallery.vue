@@ -2,7 +2,7 @@
     <div class="photo-gallery">
         <h2>Photography Collection</h2>
         <div class="filters">
-            <button @click="filterByGroup('all')" :class="{ active: currentGroup === 'all' }">所有图片</button>
+            <button @click="filterByGroup('all')" :class="{ active: currentGroup === 'all' }">all</button>
             <button v-for="group in uniqueGroups" :key="group" @click="filterByGroup(group)" :class="{ active: currentGroup === group }">
                 {{ group }}
             </button>
